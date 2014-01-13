@@ -10,7 +10,7 @@ define(function(require, exports, module) {
   module.exports = Backbone.View.extend({
     initialize: function(){
       this.model = {
-        pageTitle: "Hallo hallo...",
+        pageTitle: "Hallo hallo!..",
         copyrightMessage: "Fabs " + new Date().getFullYear()
       };
       this.render();
