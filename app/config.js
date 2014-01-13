@@ -3,31 +3,33 @@
 require.config({
   paths: {
     // Make vendor easier to access.
-    "vendor": "../vendor",
+    'vendor': '../vendor',
 
     // Almond is used to lighten the output filesize.
-    "almond": "../vendor/bower/almond/almond",
+    'almond': '../vendor/bower/almond/almond',
 
     // Opt for Lo-Dash Underscore compatibility build over Underscore.
-    "underscore": "../vendor/bower/lodash/dist/lodash.underscore",
+    'underscore': '../vendor/bower/lodash/dist/lodash.underscore',
 
     // Map remaining vendor dependencies.
-    "jquery": "../vendor/bower/jquery/jquery",
-    "backbone": "../vendor/bower/backbone/backbone",
-    "bootstrap": "../vendor/bower/bootstrap/dist/js/bootstrap",
-    "text": "../vendor/bower/requirejs-text/text"
+    'jquery': '../vendor/bower/jquery/jquery',
+    'backbone': '../vendor/bower/backbone/backbone',
+    'bootstrap': '../vendor/bower/bootstrap/dist/js/bootstrap',
+    'text': '../vendor/bower/requirejs-text/text'
   },
 
   shim: {
     // This is required to ensure Backbone works as expected within the AMD
     // environment.
-    "backbone": {
+    'backbone': {
       // These are the two hard dependencies that will be loaded first.
-      deps: ["jquery", "underscore"],
+      deps: ['jquery', 'underscore'],
 
-      // This maps the global `Backbone` object to `require("backbone")`.
-      exports: "Backbone"
+      // This maps the global `Backbone` object to `require('backbone')`.
+      exports: 'Backbone'
     },
-    "bootstrap" : ["jquery"]
+
+    // bootstrap 3.0 js requires jquery
+    'bootstrap' : ['jquery']
   }
 });

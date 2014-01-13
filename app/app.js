@@ -1,15 +1,15 @@
 define(function(require, exports, module) {
-  "use strict";
+  'use strict';
 
   // External dependencies.
-  var _ = require("underscore");
-  var $ = require("jquery");
-  var Backbone = require("backbone");
-  var bootstrap = require("bootstrap");
+  var _ = require('underscore');
+  var $ = require('jquery');
+  var Backbone = require('backbone');
+  var bootstrap = require('bootstrap');
 
   // Alias the module for easier identification.
   var app = module.exports;
 
   // The root path to run the application through.
-  app.root = "/";
+  app.root = '/';
 });
