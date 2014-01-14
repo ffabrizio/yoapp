@@ -1,7 +1,6 @@
 define(function(require, exports, module) {
   'use strict';
 
-  // External dependencies.
   var _ = require('underscore');
   var $ = require('jquery');
   var Backbone = require('backbone');
